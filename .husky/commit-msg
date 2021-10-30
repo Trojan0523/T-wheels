@@ -1,0 +1,8 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "-- start commitlint checking  --"
+
+npx --no-install commitlint --edit "$1"
+
+echo "-- end commitlint checking, success --"
