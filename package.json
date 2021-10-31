@@ -1,7 +1,8 @@
 {
   "name": "t-wheels",
   "version": "0.0.0",
-  "author": "",
+  "author": "Puk HungYu",
+  "description": "Vue.js 3 UI component Library",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
@@ -10,25 +11,27 @@
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "devDependencies": {
+    "@vitejs/plugin-vue-jsx": "^1.2.0",
     "@typescript-eslint/eslint-plugin": "^5.2.0",
     "@typescript-eslint/parser": "^5.2.0",
     "@vitejs/plugin-vue": "^1.9.3",
     "@vue/eslint-config-standard": "^6.1.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-vue": "^7.18.0",
     "husky": "^7.0.4",
     "lint-staged": "^11.2.6",
+    "sass": "^1.43.4",
     "typescript": "^4.4.4",
     "vite": "^2.6.4",
     "vite-plugin-eslint": "^1.3.0",
     "vue-tsc": "^0.3.0"
   },
   "dependencies": {
-    "@vitejs/plugin-vue-jsx": "^1.2.0",
     "vue": "^3.2.16"
   },
   "engines": {

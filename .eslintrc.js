@@ -1,30 +1,38 @@
-Module.exports = {
-    root: true,
-    env: {
-        browser: true,
-        es2021: true,
+module.exports = {
+  parser: 'vue-eslint-parser',
+  parserOptions: {
+    parser: '@typescript-eslint/parser',
+    ecmaVersion: 11,
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+      tsx: true,
     },
-    extends: [
-        'plugin:@typescript-eslint/eslint-recommended',
-        'plugin:@typescript-eslint/recommended',
-        '@vue/standard',
-        'plugin:vue/vue3-recommended',
-        'airbnb-base',
-    ],
-    parserOptions: {
-        parser: '@typescript-eslint/parser',
-        ecmaVersion: 12,
-        sourceType: 'module',
-        ecmaFeatures: {
-            jsx: true,
-            tsx: true,
-        }
+  },
+  root: true,
+  env: {
+    browser: true,
+    es2020: true,
+    node: true,
+  },
+  plugins: ['@typescript-eslint'],
+  settings: {
+    'import/resolver': {
+      typescript: {
+        project: './tsconfig.json',
+      },
     },
-    plugins: [
-        '@typescript-eslint',
-    ],
-    rules: {
-        semi: [2, 'never'],
+  },
+  extends: [
+    'airbnb-base',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:import/typescript',
+    'plugin:vue/vue3-recommended',
+    '@vue/standard',
+  ],
+  rules: {
+    'semi': [2, 'never'],
     'comma-dangle': ['error', 'always-multiline'],
     'arrow-parens': 'off',
     'no-underscore-dangle': 'off',
@@ -81,11 +89,12 @@ Module.exports = {
     '@typescript-eslint/no-empty-function': ['off'],
     'linebreak-style': ['off', 'windows'],
     'import/prefer-default-export': 'off',
-    indent: 'off',
+    'indent': 'off',
     '@typescript-eslint/indent': ['error', 2],
     'no-empty-function': 'off',
     'no-bitwise': 'off',
     'node/no-deprecated-api': 'off',
     'import/no-cycle': 'off',
-    },
+    'import/no-unresolved': 'error',
+  },
 }
