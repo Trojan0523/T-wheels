@@ -1,0 +1,15 @@
+{
+  "eslint.codeActionsOnSave.mode": "problems",
+  "eslint.run": "onSave",
+  "eslint.validate": ["javascript", "javascriptreact", "html", "vue-html"],
+  "editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+	"[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"cSpell.words": [
+		"commitlint"
+	],
+}

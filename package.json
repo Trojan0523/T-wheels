@@ -28,6 +28,7 @@
     "vue-tsc": "^0.3.0"
   },
   "dependencies": {
+    "@vitejs/plugin-vue-jsx": "^1.2.0",
     "vue": "^3.2.16"
   },
   "engines": {
